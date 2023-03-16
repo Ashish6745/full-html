@@ -1,0 +1,438 @@
+<!DOCTYPE html> <!---doctype is used to describe the version of html used and helps browser to display webpage correctly-->
+<html lang="en">
+<head> 
+    <!--meta is used to display description of web page on internet and it includes authot-name ,description-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>FULL-HTML-CSS</title>
+</head>
+<!---whatever you will write inside body will display on web page -->
+<body>
+    <!----Heading :- there are 6 types of heading in html from h1 - h6 , h1 is the largest and h1>h2>h3>h4>h5>h6-- used for giiving title to ur website>
+    <h1>Heading1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    
+    <-----Paragraph : defined by <p> tag in html-->
+        <p>This is an Paragraph in html</p>
+   <!----HTML Atrributes : It provides additional information about the html elements-->
+    <!-----Anchor tag denoted <a> tag  in it href attribute is used for url of website you want to visit --> 
+        <a href=""></a>  
+        <!----<Img>: used for defining an image in html , it has src(source) attribute for providing images link and alt for writing details about image and it will be visible to  visitor if images is not loaded correctly -->
+            <img src="img_link" alt="this is an car image">
+
+      <!----HTML STYLE : used to add styling to your html element such as color, font-size, font-family,background-color-->
+      <!----color:- used for coloring text , font-size: giving size to text, font-family: defines type of txt you want like cursive, itallice etc., background-color:defines color in background, text-alignment: defines the horizontal alignment of text for an html element-->
+      
+      <!----HTML TEXT FORMATTING------>
+      <div>
+        <b>THIS IS AN BOLD TEXT</b>
+        <strong>This is an bold text but this shows importance</strong>
+        <i>This is an itallic text</i>
+        <em>IT LOOKS SIMILAR TO ITALLIC TEXT JUST NAMED DIFFERENTLY AS EMPHASISED</em>
+        <mark>it is highlighted text</mark>
+        <small>this is an small text</small>
+        <del>this is an deleted text and text is having strike line over it</del>
+        <ins>this is an inserted text and underlined </ins>
+        <sub>this is subscript means text will align below in comparison to normal text level</sub>
+        <sup>this is an superscript means text will align above in comparison to normal text level </sup>
+        <q>this is for quotation</q>
+        <abbr>this is for abbreviation over text</abbr>
+        <p><abbr title="world health organisation">who</abbr></p>
+        <bdo>bidirectional text used to override the direction of  text </bdo>
+        <bdo dir="rtl">this is my name </bdo> <!----dir means direction, rtl-right to left , ltr-left to right-->
+
+      </div>
+
+    <!----HTML COLORS -->
+     <!----rgb color values r-red g-green b-blue .RGB defines the intensity of color from 0-255 this means 256X256X256 colors are possible-->
+
+     <h1 style="color:rgb(255,0,0)"> red color</h1>
+     <h1 style="color:rgb(0,255,0)"> green color</h1>
+     <h1 style="color:rgb(0,0,255)"> blue  color</h1>
+
+
+     <!--------HEX COLOR : #RRGGBB -->
+     <h1 style="color:#000000"> black color (hex)</h1>
+     <h1 style="color:#ffffff"> white color (hex)</h1>
+     <h1 style="color:#ff0000"> red color</h1>
+     <h1 style="color:#00ff00"> green color</h1>
+     <h1 style="color:#0000ff"> blue  color</h1>
+
+     <!-----SHADES OF GRAY/WHITE :- use same colors for all parameters-->
+
+     <h1 style="color:#686868"> gray  color</h1>
+
+
+     <!----TYPES OF HTML STYING-CSS :- INLINE( USING STYILE ATTRIBUTE STYLING ELEMENT LINE BY LINE ) , INTERNAL(STYLING INSIDE HEAD TAG USING <STYLING> TAG) , EXTERNAL(USING SEPERATE FILE FOR CSS)-->
+        <h1 style="color:#686868;font-size: 30px;"> styling inline</h1>
+
+
+
+    <!----- HTML HYPERLINK <a> defines hyperlink it has href attribute for website link you want to visit and target defines where you want to open the website document -->
+    <a href="https://www.google.com"   target="_self">google (self will open this link in same broweser)</a><br>
+    <a href="https://www.twitter.com"   target="_blank">twitter(_blank will open this in a new window tab)</a><br>
+    <a href="https://www.instagram.com"   target="_parent">instagram(parent will open it in parent frame)</a><br>
+    <a href="https://www.facebook.com"   target="_top">facebook(top will open it in the full body of the window)</a><br>
+    <a href="https://www.linkedIn.com"   target="">linkedIn</a><br>
+    <a href="https://www.youtube.com"   target="">youtube</a><br>
+    <a href="mailto: some@example.com">send email</a>
+
+
+    <!------Note :- an unvisited link will be blue , an visited link will be purple in color, an active link will be red-->
+
+
+    <!----image : use <img> for displaying image in website-->
+    <img src="http:image.png" alt="image">
+
+    <!----Image Map : image map is an image with clickable areas.you can click on those areas and visit them-->
+    <!-----Background-image : to define an image in background use background-image property , and to avoid repeated images due to small size use background-repeat: no-repeat, and background-attachment :fixed to fix image to stay at same position while scrolling-->
+
+    <!-- background-image:url('image_url') -->
+
+
+    <!------html favicon : it is an small image displayed next to the title of your website in browser means icon of your website , you can set icon of your website like this -->
+    <link rel="icon" type="image/x-icon" href="image_path">
+
+
+    <!---HTML TABLES :- allows developer to arrange data into rows and columns----->
+
+    <tr>table rows</tr>
+    <th>table heading</th>
+    <td>table data</td>
+  <!----to add border use border property on table,th,td also you can border-style property and can set it to dotted, dashed,double and groove-->
+  <!-----TO ADD ROUND BORDER TO TABLE USE BORDER-RADIUS PROPERTY ON TH,TD-->
+
+
+    <table style="border: 2px solid red;">
+        <tr style="border: 2px solid red;">
+            <!---by default t-heading are bold and centered but you can set them text-align:center/left/right like this also-->
+            <th style="border: 2px solid green;border-radius: 5px;">Name</th>
+            <th style="border: 2px solid green;border-radius: 5px;">Class</th>
+            <th style="border: 2px solid green;border-radius: 5px;">COLLEGE</th>
+        </tr>
+        <tr style="border: 2px solid red;">
+            <td style="border: 2px solid blue;border-radius: 5px;">JACK</td>
+            <td style="border: 2px solid blue;border-radius: 5px;">BCOM</td>
+            <td style="border: 2px solid blue;border-radius: 5px;">ST.XAVIER</td>
+        </tr>
+        <tr style="border: 2px solid red;">
+            <td  style="border: 2px solid blue;border-radius: 5px;">JOHN</td>
+            <td  style="border: 2px solid blue;border-radius: 5px;">BA</td>
+            <td  style="border: 2px solid blue;border-radius: 5px;">ST.LOUIS</td>
+        </tr>
+        
+        
+
+    </table>
+
+    <!----heading for multiple columns and using concept of padding : padding gives space between cell and edges and cell-spacing: space between each cell  -->
+    <caption>caption is used to give heading  for table</caption>
+<table style="border: 2px solid red; border-spacing: 20px;">
+    <tr style="">
+        <th colspan="2" style="padding: 10px;border: 2px solid green;">Name</th>
+        <th style="border: 2px solid green;">Age</th>
+      </tr>
+      <tr style="border: 2px solid red;">
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">Jill</td>
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">Smith</td>
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">43</td>
+      </tr>
+      <tr style="border: 2px solid red;">
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">Eve</td>
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">Jackson</td>
+        <td style="border: 2px solid blue;border-radius: 5px;padding: 10px;">57</td>
+      </tr>
+</table>
+
+<div class="zebra">
+<caption>zebra stripes</caption>
+<table style="border-spacing: 20px;">
+    <tr style="">
+        <th colspan="2">Name</th>
+        <th style="">Age</th>
+      </tr>
+      <tr style="">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr style="">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+      <tr style="">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+      <tr style="">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+      <tr style="">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+      <tr style="">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+</table>
+</div>
+
+<!-----HTML LIST ARE OF TWO TYPES :- ORDERED LIST[<OL>],IN IT LIST ITEMS STYLE IS NUMBERING FROM 1,2....(BY DEFAULT IT STARTS FROM 0 BUT YOU CAN DEFINE NEUMBERING FROM ON YOUR OWN) AND UNORDERED LIST[<UL>] IN IT LIST ITEMS STYLE IS DOTS [.]-->
+  <caption>TYPE DEFINES THE TYPE OF PATTERN YOU WANT AS SHOWN BELOW FOR BOTH ORDERED AND UNORDERED LIST</caption>
+    <ol type="1">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol start="100">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol start="50">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol start="7">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol type="A">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol type="a">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol type="i">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+    <ol type="I">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ol>
+
+    <ul style="list-style-type: square;">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li >HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ul>
+
+    <ul style="list-style-type: disc;">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>HOME</li>
+        <li>GROCERY</li>
+        <li>SHOP</li>
+    </ul>
+
+
+     <!---BLOCL-LEVEL ELEMENTS - THESE ELEMENTS ALWAYS START FROM NEW LINE AND BROWSER ADD SOME SPACE AUTOMATICALLY-->
+     <div  style="color: RED;">I AM BLOCK LEVEL ELEMENT</div>
+     <p style="color: RED;">I AM BLOCK LEVEL ELEMENT</p>
+
+     <address>I AM A BLOCK LEVEL ELEMENT</address>
+
+     <li style="color: red;">I AM A BLOCK LEVEL ELEMENT</li>
+     <ol style="color: red;">I AM A BLOCK LEVEL ELEMENT</ol>
+     <h1 style="color: red;">I AM A BLOCK LEVEL ELEMENT</h1>
+     <nav style="color: red;">I AM A BLOCK LEVEL ELEMENT</nav><hr>
+
+
+ <!---INLINE ELEMENTS : THESE ELEMENTS DOES NOT START ON NEW LINE THEY JUST TAKE SPACE AS MUCH AS THEY WANT-->
+ <a style="color: #0000ff;">I AM A INLINE ELEMENT </a>
+ <span style="color: #0000ff;">I AM A INLINE ELEMENT</span>
+ <button style="color: #0000ff;">I AM A INLINE ELEMENT</button>
+ <strong style="color: #0000ff;">I AM A INLINE ELEMENT</strong>
+ <i style="color: #0000ff;">I AM A INLINE ELEMENT</i>
+ <sup style="color: #0000ff;">I AM A INLINE ELEMENT</sup>
+ <sub style="color: #0000ff;">I AM A INLINE ELEMENT</sub>
+ <label style="color: #0000ff;">I AM A INLINE ELEMENT</label><hr>
+
+ <p class="">CLASS ATTRIBUTE</p>
+ <!---CLASS ATTRIBUTES : USED TO SPECIFY CLASS FOR AN HTML ELEMENT AND ALSO USED MANIPULATE DOM ELEMENT IN JS ALONG WITH STYLING IN CSS . TO ACCESS AN HTML ELEMENT FROM ITS CLASS USE DOT(.) BEFORE CLASS NAME OF THAT ELEMENT-->
+<p id="">ID ATTRIBUTE</p>
+<!---ID ATTRIBUTES : USED TO SPECIFY ID FOR AN HTML ELEMENT AND ALSO USED MANIPULATE DOM ELEMENT IN JS ALONG WITH STYLING IN CSS . TO ACCESS AN HTML ELEMENT FROM ITS ID USE DOT(#) BEFORE ID NAME  OF THAT ELEMENT-->
+
+<!---semantice elements are those elements that defines something about the tag like form ,nav ,footer, table-->
+<table style="color:red">i am semantic element</table>
+<nav style="color:red">i am semantic element</nav>
+<footer style="color:red">i am semantic element</footer>
+<header style="color:red">i am semantic element</header>
+<form style="color:red">i am semantic element</form>
+<hr>
+<!---Non-semantice elements are those elements that defines nothing about the tag-->
+<div style="color:blue">non-semantice element</div>
+<span style="color:blue">non-semantice element</span>
+
+
+
+<!----HTML CHARACTER ENTITIES-->
+ [<] &lt;
+ []>] &gt;
+ [&] &amp;
+["]  &QUOT;
+[c] &copy;
+<!----HTML EMOJIS-->
+<meta charset="UTF-8">
+
+<h3>My First Emoji</h3>
+
+<h1>&#128512;</h1>
+<h1>&#128516;</h1>
+<h1>&#128525;</h1>
+<h1>&#128151;</h1>
+<h1>&#128517;</h1>
+<hr>
+
+<caption>form is used to create form in html</caption>
+
+<form>
+  
+    
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="cena"><br><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
+    <input type="submit" value="Submit">
+
+    <input type="radio" id="html"  value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css"  value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript"  value="JavaScript">
+    <label for="javascript">JavaScript</label>
+
+    <input type="checkbox" id="html"  value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css"  value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="javascript"  value="JavaScript">
+    <label for="javascript">JavaScript</label>
+
+
+    <input type="button"  value="Click Me!">
+
+
+
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color">
+
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <input type="submit" value="Submit">
+
+
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <input type="submit" value="Submit">
+
+
+
+
+    <label>choose your fav bike</label>
+    <select>
+        <option>pulsar</option>
+        <option>splendor</option>
+        <option>victor gl</option>
+    </select>
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+
+
+</body>
+</html>
